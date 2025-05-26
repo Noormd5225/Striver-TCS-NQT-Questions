@@ -1,0 +1,11 @@
+  public static void Smallestnumber()
+    {
+        int [] nums={2,3,4,2,12,3,43,3,443,42,3};
+        int minValue=Integer.MAX_VALUE;
+        for (int x:nums){
+            if(minValue>x){
+                minValue=x;
+            }
+        }
+        System.out.println(minValue);
+    }
