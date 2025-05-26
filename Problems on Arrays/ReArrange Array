@@ -1,0 +1,19 @@
+   public static void RearrangeArray(){
+        int [] nuums={1,2,3,4,5};
+
+        int n=nuums.length;
+       // int j=0;
+        int start=nuums.length/2;
+        int end=nuums.length-1;
+        while(start<end){
+
+            nuums[start]=nuums[start]+nuums[end];
+            nuums[end]=nuums[start]-nuums[end];
+            nuums[start]=nuums[start]-nuums[end];
+            start++;
+            end--;
+        }
+        for(int x:nuums){
+            System.out.print(x+" ");
+        }
+    }
