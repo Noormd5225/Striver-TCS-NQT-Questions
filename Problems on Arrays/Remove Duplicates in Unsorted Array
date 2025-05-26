@@ -1,0 +1,10 @@
+   public static void RemoveDuplicatesFromUnsortedArray(){
+        int [] nums={1,2,1,2,3,34,44,23};
+        HashSet<Integer> ht=new HashSet<>();
+        for (int x:nums){
+            ht.add(x);
+        }
+        for (Integer x:ht){
+            System.out.println(x);
+        }
+    }
