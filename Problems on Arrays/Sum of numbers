@@ -1,0 +1,8 @@
+   public static void SumOfNumber(){
+        int [] nums={1,2,2,42,2,34,3,23,2,233,3};
+        int sum=0;
+        for (int x:nums){
+            sum+=x;
+        }
+        System.out.println(sum);
+    }
