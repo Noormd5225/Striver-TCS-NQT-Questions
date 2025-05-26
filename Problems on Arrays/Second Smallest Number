@@ -1,0 +1,22 @@
+ public static void SecondSmallestandSecondLargest(){
+        int small=Integer.MAX_VALUE,large=Integer.MIN_VALUE,secondSmall=Integer.MAX_VALUE,secondlarge=Integer.MIN_VALUE;
+        int [] nums={1,-1,2,34,54,5306,5306,4,3};
+        for(int x:nums){
+            if(x>large){
+                secondlarge=large;
+                large=x;
+            } else if (x>secondlarge&&large!=x) {
+                secondlarge=x;
+
+            }
+            if(x<small){
+                secondSmall=small;
+                small=x;
+            } else if (x<secondSmall&&small!=x) {
+                secondSmall=x;
+
+            }
+        }
+        System.out.println(secondlarge+" "+secondSmall);
+
+    }
