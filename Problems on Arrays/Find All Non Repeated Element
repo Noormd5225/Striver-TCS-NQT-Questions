@@ -1,0 +1,14 @@
+ public static void FInDAllNonRepeatingElement(){
+        int [] nums={1,2,2,42,2,34,3,23,2,233,3};
+        HashMap<Integer,Integer> ht=new HashMap<>();
+        for (int x:nums){
+            ht.put(x,ht.getOrDefault(x,0)+1);
+        }
+        for (Integer x:ht.keySet()){
+            if(ht.get(x)==1){
+                System.out.println(x);
+            }
+        }
+
+
+    }
