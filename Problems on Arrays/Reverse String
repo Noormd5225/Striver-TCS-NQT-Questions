@@ -1,0 +1,19 @@
+    public static void ReverseString(){
+        String a="aban";
+        char[] nums=a.toCharArray();
+        int start=0;
+        int end=nums.length-1;
+        while(start<end){
+
+           char ch=nums[start];
+           nums[start]=nums[end];
+           nums[end]=ch;
+            start++;
+            end--;
+        }
+
+    for(char x:nums){
+        System.out.println(x);
+    }
+
+    }
