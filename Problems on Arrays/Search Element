@@ -1,0 +1,10 @@
+ public static boolean SearchElement(){
+        int [] nums={1,2,2,3,4,543,3};
+        int target=4;
+        for(int x:nums){
+            if(x==target){
+                return true;
+            }
+        }
+        return false;
+    }
